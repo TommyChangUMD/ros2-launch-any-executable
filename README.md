@@ -1,6 +1,6 @@
 # ros2_launch_any_executable
 
-This ROS 2 package shows how you can launch any excutable, including bash scripts.
+This ROS 2 package shows how you can launch (or package) any excutable, including bash scripts.
 
 ## How to compile
 
