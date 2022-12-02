@@ -9,7 +9,7 @@ colcon build --packages-select my_ros2_pkg
 source install/setup.bash
 ```
 
-## How to run the executable directly
+## How to run the executable using ROS 2 run
 
 ```
 ros2 run my_ros2_pkg run_me.bash
