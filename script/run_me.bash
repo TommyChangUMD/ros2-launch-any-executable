@@ -25,6 +25,11 @@ cat $PROG_DIR/some_input_file.txt
 
 while (true); do
   sleep 1;
-  echo "doing something useful"
+
+  if [[ "$MY_PARAM" == "None" ]]; then
+      echo "I will just run with default parameters, MY_PARAM = '$MY_PARAM'"
+  else
+      echo "I see you want to run with custom parameters, MY_PARAM = '$MY_PARAM'"
+  fi
 done
 
