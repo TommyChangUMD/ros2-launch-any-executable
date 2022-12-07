@@ -21,7 +21,7 @@ MY_PARAM="hello" ros2 run my_ros2_pkg run_me.bash
 ## How to run the executable using ROS 2 launch
 
 ```
-ros2 run my_ros2_pkg run_me.bash
+ros2 launch my_ros2_pkg demo.launch.py
 # or
 MY_PARAM="hello" ros2 launch my_ros2_pkg demo.launch.py
 ```
