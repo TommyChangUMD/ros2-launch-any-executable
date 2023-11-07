@@ -11,10 +11,17 @@ source install/setup.bash
 
 ## How to run the executable using ROS 2 run
 
+Usage:
+  run_me.bash [-h | -m message]
+
+Example:
+  run_me.bash
+  run_me.bash -m hello
+  
 ```
-ros2 run my_ros2_pkg run_me.bash
+ros2 run my_ros2_pkg run_me.bash 
 # or
-MY_PARAM="hello" ros2 run my_ros2_pkg run_me.bash
+ros2 run my_ros2_pkg run_me.bash -m hello
 ```
 
 
@@ -23,7 +30,7 @@ MY_PARAM="hello" ros2 run my_ros2_pkg run_me.bash
 ```
 ros2 launch my_ros2_pkg demo.launch.py
 # or
-MY_PARAM="hello" ros2 launch my_ros2_pkg demo.launch.py
+ros2 launch my_ros2_pkg demo.launch.py msg_to_print:=bye
 ```
 
 ## References
